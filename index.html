@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Pit Scouting</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>POBots <span>#353</span></h1>
+            <p class="subtitle">Pit Scouting — Impact Award</p>
+        </header>
+
+        <form id="scoutingForm">
+
+            <div class="section">
+                <label for="teamNumber">Team Number</label>
+                <input type="text" id="teamNumber" />
+            </div>
+
+            <div class="section">
+                <label for="scouter">Scouter Name</label>
+                <input type="text" id="scouter" placeholder="Your name" />
+            </div>
+
+            <div class="section">
+                <label for="submittedImpact">Did they submit for Impact Award?</label>
+                <select id="submittedImpact">
+                    <option value="">Select...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label for="wonImpact">Have they won Impact before?</label>
+                <select id="wonImpact">
+                    <option value="">Select...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label for="keyInitiatives">What are their key impact initiatives?</label>
+                <textarea id="keyInitiatives" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="longestInitiative">What is their longest-standing impact initiative?</label>
+                <textarea id="longestInitiative" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="plannedEvents">What events are they planning?</label>
+                <textarea id="plannedEvents" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="inclusivity">How do they promote an inclusive environment?</label>
+                <textarea id="inclusivity" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="futureGoals">What are their future goals for impact?</label>
+                <textarea id="futureGoals" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="sustainability">How do they ensure team sustainability?</label>
+                <textarea id="sustainability" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="notes">Miscellaneous Notes</label>
+                <textarea id="notes" rows="3" placeholder="Anything else worth noting"></textarea>
+            </div>
+
+            <div class="voice-section">
+                <p class="voice-label">Record</p>
+                <p class="voice-hint">Record your conversation with the team
+                </p>
+                <button type="button" id="voiceBtn">Start Recording</button>
+                <div id="voiceStatus"></div>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Scouting Data</button>
+            <div id="submitStatus"></div>
+
+        </form>
+    </div>
+
+    <!-- Firebase -->
+    <script type="module" src="app.js" defer></script>
+</body>
+
+</html>
